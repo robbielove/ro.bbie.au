@@ -31,7 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} dark:bg-black antialiased`}
       >
         <Navigation />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="container mx-auto p-4">
+          {children}
+          <SpeedInsights />
+        </main>
         <Footer />
       </body>
     </html>
